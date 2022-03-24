@@ -23,9 +23,13 @@ class _CandWidgetState extends State<CandWidget> {
   Widget build(BuildContext context) {
     return Container(
       width: widget.width * 0.8,
-      height: widget.width * 0.1,
-      padding: EdgeInsets.fromLTRB(widget.width * 0.048, widget.width * 0.024,
-          widget.width * 0.048, widget.width * 0.048),
+      height: widget.width * 0.12,
+      padding: EdgeInsets.fromLTRB(
+        widget.width * 0.048,
+        widget.width * 0.024,
+        widget.width * 0.048,
+        widget.width * 0.048,
+      ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         border: Border.all(color: Colors.deepPurple),
@@ -35,7 +39,7 @@ class _CandWidgetState extends State<CandWidget> {
         child: Text(
           widget.text,
           style: TextStyle(
-            fontSize: widget.width * 0.03,
+            fontSize: widget.width * 0.035,
             color: widget.answerSate ? Colors.white : Colors.black,
           ),
         ),
